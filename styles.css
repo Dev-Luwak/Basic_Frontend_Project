@@ -15,6 +15,7 @@
     margin: 0px;
     font-family: 'Inter', sans-serif;    
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 body{
@@ -396,6 +397,7 @@ body{
 }
 .feature-card:nth-child(1):hover {
     background: linear-gradient(225deg, #4a99e2, #357ab7);
+    transform: scale(1.05);
 }
 
 /* Card 2: Pink */
@@ -404,6 +406,7 @@ body{
 }
 .feature-card:nth-child(2):hover {
     background: linear-gradient(225deg, #ff6289, #e44b71);
+    transform: scale(1.05);
 }
 
 /* Card 3: Orange */
@@ -412,6 +415,7 @@ body{
 }
 .feature-card:nth-child(3):hover {
     background: linear-gradient(225deg, #fcbf58, #e0a83f);
+    transform: scale(1.05);
 }
 
 /* Card 4: Teal */
@@ -420,6 +424,7 @@ body{
 }
 .feature-card:nth-child(4):hover {
     background: linear-gradient(225deg, #44bfc3, #329fa1);
+    transform: scale(1.05);
 }
 
 /* Card 5: Green */
@@ -428,6 +433,7 @@ body{
 }
 .feature-card:nth-child(5):hover {
     background: linear-gradient(225deg, #77b05d, #5a9245);
+    transform: scale(1.05);
 }
 
 /* Card 6: Purple */
@@ -436,6 +442,7 @@ body{
 }
 .feature-card:nth-child(6):hover {
     background: linear-gradient(225deg, #7d78b1, #635f94);
+    transform: scale(1.05);
 }
 .feature-title{
     color: white;
@@ -451,4 +458,66 @@ body{
     .feature-grid{
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.test-container{
+    background-color: var(--background-color);
+    padding: 0 2rem;
+    margin:  auto;
+    max-width: 1280px;
+}
+
+.test-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 2rem;
+}
+.test-title{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.test-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.test-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(171, 163, 163);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.2rem;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.test-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 1px solid blue;
+}
+
+.userphoto{
+    height: 5rem;
+    width: 5rem;
+}
+
+.testimony{
+    color: #555;
+    font-size: 0.875rem;
+}
+
+.test-username{
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.test-user-info{
+    font-size: 0.875rem;
+    color: #777;
 }
