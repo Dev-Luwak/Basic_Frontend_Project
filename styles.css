@@ -115,11 +115,3 @@ body{
     height: 1.5rem;
     width: 1.5rem;
 }
-
-.header{
-    border: none;
-    border-radius: 9999px;
-    width: 70vw;
-    margin: 0 auto;
-    background-color: #e8e8e8a4;
-}
